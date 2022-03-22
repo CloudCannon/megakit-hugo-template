@@ -8,6 +8,8 @@ collections_config:
       - visual
 
 _inputs:
+  content:
+    type: markdown
   icon:
     type: select
     options: 
