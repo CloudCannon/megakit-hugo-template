@@ -7,6 +7,7 @@ tags = []
 
 [props]
 title = "Hero page"
-[[props.hero]]
-background_image = "/images/bg/home-2.jpg"
+[props.hero]
 title = "Hero"
+background_image = "/images/bg/home-2.jpg"
+

@@ -10,31 +10,31 @@ preheading = "Our works"
 heading = "We have done lots of works, lets check some"
 
 [[props.projects]]
+name = "Project California"
 image_path = "/images/portfolio/1.jpg"
-name = "Project California"
 type = "Web Development"
 
 [[props.projects]]
+name = "Project California"
 image_path = "/images/portfolio/2.jpg"
-name = "Project California"
 type = "Web Development"
 
 [[props.projects]]
+name = "Project California"
 image_path = "/images/portfolio/3.jpg"
-name = "Project California"
 type = "Web Development"
 
 [[props.projects]]
+name = "Project California"
 image_path = "/images/portfolio/4.jpg"
-name = "Project California"
 type = "Web Development"
 
 [[props.projects]]
+name = "Project California"
 image_path = "/images/portfolio/5.jpg"
-name = "Project California"
 type = "Web Development"
 
 [[props.projects]]
-image_path = "/images/portfolio/6.jpg"
 name = "Project California"
+image_path = "/images/portfolio/6.jpg"
 type = "Web Development"

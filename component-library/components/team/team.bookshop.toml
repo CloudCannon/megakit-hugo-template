@@ -55,8 +55,8 @@ instagram = "themefisher"
 linkedin = "themefisher"
 
 [[props.people]]
-image = "/images/team/team-5.jpg"
 name = "David Spensor"
+image = "/images/team/team-5.jpg"
 role = "Project Manager"
 facebook = "themefisher"
 twitter = "themefisher"

@@ -10,18 +10,18 @@ preheading = "Our Services"
 heading = "We provide a wide range of creative services "
 
 [[props.sections]]
-icon = "ti-desktop"
 title = "Web development"
+icon = "ti-desktop"
 content = "A digital agency isn't here to replace your internal team, we're here to partner."
 
 [[props.sections]]
-icon = "ti-layers"
 title = "Interface Design"
+icon = "ti-layers"
 content = "A digital agency isn't here to replace your internal team, we're here to partner."
 
 [[props.sections]]
-icon = "ti-bar-chart"
 title = "Business Consulting"
+icon = "ti-bar-chart"
 content = "A digital agency isn't here to replace your internal team, we're here to partner."
 
 [[props.sections]]
@@ -30,11 +30,11 @@ title = "Branding"
 content = "A digital agency isn't here to replace your internal team, we're here to partner."
 
 [[props.sections]]
-icon = "ti-android"
 title = "App development"
+icon = "ti-android"
 content = "A digital agency isn't here to replace your internal team, we're here to partner."
 
 [[props.sections]]
-icon = "ti-pencil-alt"
 title = "Content creation"
+icon = "ti-pencil-alt"
 content = "A digital agency isn't here to replace your internal team, we're here to partner."
