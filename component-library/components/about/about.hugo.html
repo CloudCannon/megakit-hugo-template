@@ -4,13 +4,13 @@
 		<div class="row">
 			<div class="col-lg-6 offset-lg-6 offset-md-0">
 				<div class="about-item ">
-					<span class="h6 text-color">{{ .preheading | markdownify }}</span>
-					<h2 class="mt-3 mb-4 position-relative content-title">{{ .heading | markdownify }}</h2>
+					<span class="h6 text-color">{{ .preheading }}</span>
+					<h2 class="mt-3 mb-4 position-relative content-title">{{ .heading }}</h2>
 					<div class="about-content">
-						<h4 class="mb-3 position-relative">{{ .subheading | markdownify }}</h4>
+						<h4 class="mb-3 position-relative">{{ .subheading }}</h4>
 						<p class="mb-5">{{ .content | markdownify }}</p>
 
-						<a href="{{ .link.url }}" class="btn btn-main btn-round-full">{{ .link.text | markdownify }}</a>
+						<a href="{{ .link.url }}" class="btn btn-main btn-round-full">{{ .link.text }}</a>
 					</div>
 				</div>
 			</div>
