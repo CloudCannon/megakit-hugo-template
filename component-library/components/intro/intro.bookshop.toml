@@ -11,15 +11,15 @@ heading = "We work with business & provide solution to client with their busines
 
 [[props.sections]]
 icon = "ti-desktop"
-heading = "Modern & Responsive design"
+title = "Modern & Responsive design"
 text = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, ducimus."
 
 [[props.sections]]
 icon = "ti-medall"
-heading = "Awarded licensed company"
+title = "Awarded licensed company"
 text = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, ducimus."
 
 [[props.sections]]
 icon = "ti-layers"
-heading = "Build your website Professionally"
+title = "Build your website Professionally"
 text = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, ducimus."

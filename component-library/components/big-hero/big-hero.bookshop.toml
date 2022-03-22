@@ -1,7 +1,7 @@
 [component]
 structures = ["content_blocks"]
-label = "Slider"
-description = "Main page banner block"
+label = "Big Hero"
+description = "Main page Hero block"
 icon = "title"
 tags = []
 

@@ -3,8 +3,8 @@
 		<div class="row ">
 			<div class="col-lg-8">
 				<div class="section-title">
-					<span class="h6 text-color ">{{ .preheading | markdownify }}</span>
-					<h2 class="mt-3 content-title">{{ .heading | markdownify }}</h2>
+					<span class="h6 text-color ">{{ .preheading }}</span>
+					<h2 class="mt-3 content-title">{{ .heading }}</h2>
 				</div>
 			</div>
 		</div>
@@ -13,7 +13,7 @@
 				<div class="col-lg-4 col-md-6 col-12">
 					<div class="intro-item mb-5 mb-lg-0">
 						<i class="{{ .icon }} color-one"></i>
-						<h4 class="mt-4 mb-3">{{ .heading | markdownify }}</h4>
+						<h4 class="mt-4 mb-3">{{ .title }}</h4>
 						<p>{{ .text | markdownify }}</p>
 					</div>
 				</div>
