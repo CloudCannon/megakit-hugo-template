@@ -1,0 +1,25 @@
+[component]
+structures = ["content_blocks"]
+label = "Intro"
+description = "Overview section"
+icon = "receipt"
+tags = []
+
+[props]
+preheading = "We are creative & expert people"
+heading = "We work with business & provide solution to client with their business problem"
+
+[[props.sections]]
+icon = "ti-desktop"
+heading = "Modern & Responsive design"
+text = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, ducimus."
+
+[[props.sections]]
+icon = "ti-medall"
+heading = "Awarded licensed company"
+text = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, ducimus."
+
+[[props.sections]]
+icon = "ti-layers"
+heading = "Build your website Professionally"
+text = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, ducimus."

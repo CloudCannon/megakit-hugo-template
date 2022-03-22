@@ -1,0 +1,66 @@
+[component]
+structures = ["content_blocks"]
+label = "Pricing"
+description = "Pricing section"
+icon = "offline_bolt"
+tags = []
+
+[props]
+preheading = "Our pricing"
+heading = "No hidden Charges.Choose Your Perfect Plan"
+
+  [[props.plans]]
+  name = "Free"
+  price = "$0"
+  metric = "Per User / Month"
+  includes = [
+    "Up to 1 User",
+    "Max 100 Items",
+    "500 Queries",
+    "Basic Statistics"
+  ]
+
+    [props.plans.button]
+    url = "/"
+    text = "Download Now"
+    highlight = false
+
+  [[props.plans]]
+  name = "Basic"
+  price = "$12"
+  metric = "Per User / Month"
+  includes = [
+    "Up to 5 Users",
+    "Max 1000 Items",
+    "5000 Queries",
+    "Standard Statistics"
+  ]
+
+    [props.plans.button]
+    url = "/"
+    text = "Sign Up Now"
+    highlight = true
+
+  [[props.plans]]
+  name = "Premium"
+  price = "$39"
+  metric = "Per User / Month"
+  includes = [
+    "Unlimited Users",
+    "Unlimited Items",
+    "Unlimited Queries",
+    "Full Statistics"
+  ]
+
+    [props.plans.button]
+    url = "/"
+    text = "Download Now"
+    highlight = false
+
+  [props.cta]
+  preheading = "For every type business"
+  heading = "Entrust Your Project to Our Best Team of Professionals"
+
+    [props.cta.button]
+    url = "/contact/"
+    text = "Contact"

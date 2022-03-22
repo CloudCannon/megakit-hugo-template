@@ -1,0 +1,14 @@
+<section class="section counter">
+	<div class="container">
+		<div class="row">
+			{{ range .numbers }}
+				<div class="col-lg-3 col-md-6 col-sm-6">
+						<div class="counter-item text-center mb-5 mb-lg-0">
+							<h3 class="mb-0"><span class="counter-stat font-weight-bold">{{ .number }}</span> {{ .suffix }}</h3>
+							<p class="text-muted">{{ .text }}</p>
+						</div>
+				</div>
+			{{ end }}
+		</div>
+	</div>
+</section>

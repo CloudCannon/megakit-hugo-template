@@ -1,0 +1,58 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = "Megakit"
+Paginate = 20
+PaginatePath = "/"
+summaryLength = 10
+
+[taxonomies]
+category = "categories"
+
+[permalinks]
+posts = ":section/:year/:month/:day/:title/"
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 2
+  [[menu.main]]
+    identifier = "services"
+    name = "Services"
+    url = "/services/"
+    weight = 3
+  [[menu.main]]
+    identifier = "portfolio"
+    name = "Portfolio"
+    url = "/portfolio/"
+    weight = 4
+  [[menu.main]]
+    identifier = "pricing"
+    name = "Pricing"
+    url = "/pricing/"
+    weight = 4
+  [[menu.main]]
+    identifier = "blog"
+    name = "Blog"
+    url = "/blog/"
+    weight = 5
+  [[menu.main]]
+    identifier = "contact"
+    name = "Contact"
+    url = "/contact/"
+    weight = 6
+
+[module]
+replacements = "local/component-library -> ../component-library"
+
+[[module.imports]]
+path = 'local/component-library'
+
+[[module.imports]]
+path = 'github.com/cloudcannon/bookshop/hugo/v2'

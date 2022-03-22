@@ -1,0 +1,19 @@
+[component]
+structures = ["content_blocks"]
+label = "Numbers"
+description = "Numbers section"
+icon = "poll"
+tags = []
+
+[props]
+[[props.sections]]
+title = "Our Mission"
+text = "llum similique ducimus accusamus laudantium praesentium, impedit quaerat, itaque maxime sunt deleniti voluptas distinctio."
+
+[[props.sections]]
+title = "Vision"
+text = "llum similique ducimus accusamus laudantium praesentium, impedit quaerat, itaque maxime sunt deleniti voluptas distinctio."
+
+[[props.sections]]
+title = "Our Approach"
+text = "llum similique ducimus accusamus laudantium praesentium, impedit quaerat, itaque maxime sunt deleniti voluptas distinctio."

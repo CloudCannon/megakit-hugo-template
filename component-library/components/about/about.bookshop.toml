@@ -1,0 +1,16 @@
+[component]
+structures = ["content_blocks"]
+label = "About"
+description = "About section"
+icon = "fingerprint"
+tags = []
+
+[props]
+preheading = "What we are"
+heading = "We are dynamic team of creative people"
+subheading = "We are Perfect Solution"
+content = "We provide consulting services in the area of IFRS and management reporting, helping companies to reach their highest level. We optimize business processes, making them easier."
+background_image = "/images/about/home-8.jpg"
+[[props.link]]
+text = "Get started"
+url = "#"

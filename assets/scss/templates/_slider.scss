@@ -1,0 +1,31 @@
+.slider{
+  background: url("../images/bg/home-1.jpg") no-repeat;
+  background-size: cover;
+  background-position: 10% 0%;
+  padding:200px 0;
+  position: relative;
+  @include tablet {
+    padding:150px 0;
+  }
+  @extend .overly;
+  .block{
+    h1{
+      font-size: 70px;
+      line-height: 80px;
+      font-weight: 600;
+      color: $light;
+
+    }
+    p{
+      margin-bottom:30px;
+      color:#b9b9b9;
+      font-size: 18px;
+      line-height: 27px;
+      font-weight: 300;
+    }
+
+    span{
+      letter-spacing: 1px;
+    }
+  }
+}

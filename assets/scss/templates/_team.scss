@@ -1,0 +1,60 @@
+.team-img-hover .team-social li a.facebook {
+    background: #6666cc;
+}
+
+.team-img-hover .team-social li a.twitter {
+    background: #3399cc;
+}
+
+ .team-img-hover .team-social li a.instagram {
+    background: #cc66cc;
+}
+
+.team-img-hover .team-social li a.linkedin {
+    background: #3399cc;
+}
+
+ .team-img-hover {
+ 	position: absolute;
+	top: 10px;
+	left: 10px;
+	right: 10px;
+	bottom: 10px;
+	display: flex;
+	align-items: center;
+	justify-content:center;
+	background: rgba(255,255,255,0.6);
+	opacity: 0;
+	transition: all 0.2s ease-in-out;
+	transform: scale(0.8);
+
+ }
+
+ .team-img-hover li a{
+ 	display: inline-block;
+	color: $light;
+	width: 50px;
+	height: 50px;
+	font-size: 20px;
+	line-height: 50px;
+	border: 2px solid transparent;
+	border-radius:2px;
+	text-align: center;
+	transform: translateY(0);
+	backface-visibility: hidden;
+	transition: all 0.3s ease-in-out;
+ }
+
+
+.team-img-hover:hover  li a:hover{
+	 transform: translateY(4px);
+}
+
+.team-item:hover .team-img-hover{
+ 	opacity: 1;
+	transform: scale(1);
+ 	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+ }

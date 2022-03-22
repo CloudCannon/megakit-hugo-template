@@ -1,0 +1,30 @@
+// Testimonial Section
+
+.testimonial-item{
+	padding:50px 30px;
+
+	i{
+		font-size: 40px;
+		position: absolute;
+		left: 30px;
+		top:30px;
+		z-index: 1;
+	}
+	.testimonial-text{
+		font-size: 20px;
+		line-height: 38px;
+		color: $black;
+		margin-bottom: 30px;
+		font-style: italic;
+	}
+
+	.testimonial-item-content{
+		padding-left: 65px;
+	}
+}
+
+.slick-slide {
+  &:focus, a {
+    outline: none;
+  }
+}

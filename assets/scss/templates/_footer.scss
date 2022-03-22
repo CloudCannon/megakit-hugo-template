@@ -1,0 +1,69 @@
+.footer {
+  padding-bottom: 10px;
+
+  .copyright {
+    a {
+      font-weight: 600;
+    }
+  }
+}
+
+.lh-35 {
+  line-height: 35px;
+}
+
+.logo {
+  color: $black;
+  font-weight: 600;
+  letter-spacing: 1px;
+
+  span {
+    color: $primary-color;
+  }
+}
+
+.sub-form {
+  position: relative;
+
+  .form-control {
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    background: $secondary-color;
+  }
+
+}
+
+.footer-btm {
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.footer-socials {
+  li a {
+    margin-left: 15px;
+  }
+}
+
+
+// scroll-to-top
+.scroll-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 999;
+  height: 40px;
+  width: 40px;
+  background: $primary-color;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 43px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  display: none;
+  @include mobile {
+    bottom: 15px;
+    right: 15px;
+  }
+  &:hover {
+    background-color: #333;
+  }
+}

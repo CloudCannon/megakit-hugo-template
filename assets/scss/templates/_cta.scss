@@ -1,0 +1,11 @@
+.cta{
+	background: url("../images/bg/home-3.jpg") fixed 50% 50%;
+	background-size: cover;
+	padding: 120px 0px;
+	@extend .overly;
+}
+.cta-block{
+	background: url("../images/bg/home-3.jpg")no-repeat;
+	background-size: cover;
+	@extend .overly-2;
+}

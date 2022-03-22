@@ -1,0 +1,14 @@
+[component]
+structures = ["content_blocks"]
+label = "Slider"
+description = "Main page banner block"
+icon = "title"
+tags = []
+
+[props]
+preheading = "Prepare for new future"
+heading = "Our work is <br>presentation of our <br>capabilities."
+background_image = "/images/bg/home-1.jpg"
+[[props.link]]
+text = "Get started"
+url = "#"

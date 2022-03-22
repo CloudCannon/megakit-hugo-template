@@ -1,0 +1,44 @@
+<section class="section team">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-lg-7 text-center">
+				<div class="section-title">
+					<span class="h6 text-color">{{ .preheading | markdownify }}</span>
+					<h2 class="mt-3 content-title">{{ .heading | markdownify }}</h2>
+				</div>
+			</div>
+		</div>
+
+		<div class="row justify-content-center">
+			{{ range .people }}
+				<div class="col-lg-4 col-md-6 col-sm-6">
+					<div class="team-item-wrap mb-5">
+						<div class="team-item position-relative">
+							<img loading="lazy" src="{{ .image }}" alt="{{ .name }}" class="img-fluid w-100">
+							<div class="team-img-hover">
+								<ul class="team-social list-inline">
+									<li class="list-inline-item">
+										<a href="https://www.facebook.com/{{ .facebook }}" class="facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+									</li>
+									<li class="list-inline-item">
+										<a href="https://twitter.com/{{ .twitter }}" class="twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+									</li>
+									<li class="list-inline-item">
+										<a href="https://www.instagram.com/{{ .instagram }}" class="instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+									</li>
+									<li class="list-inline-item">
+										<a href="https://www.linkedin.com/in/{{ .linkedin }}" class="linkedin"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="team-item-content">
+							<h4 class="mt-3 mb-0 text-capitalize">{{ .name }}</h4>
+							<p>{{ .role }}</p>
+						</div>
+					</div>
+				</div>
+			{{ end }}
+		</div>
+	</div>
+</section>

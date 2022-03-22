@@ -1,0 +1,64 @@
+[component]
+structures = ["content_blocks"]
+label = "Team"
+description = "Team block"
+icon = "supervisor_account"
+tags = []
+
+[props]
+preheading = "Our Team"
+heading = "Expert Team member to get best service"
+
+[[props.people]]
+image = "/images/team/team-1.jpg"
+name = "David Spensor"
+role = "Project Manager"
+facebook = "themefisher"
+twitter = "themefisher"
+instagram = "themefisher"
+linkedin = "themefisher"
+
+[[props.people]]
+image = "/images/team/team-2.jpg"
+name = "Jason Roy"
+role = "UI/UX Designer"
+facebook = "themefisher"
+twitter = "themefisher"
+instagram = "themefisher"
+linkedin = "themefisher"
+
+[[props.people]]
+image = "/images/team/team-3.jpg"
+name = "Henry Oswald"
+role = "Developer"
+facebook = "themefisher"
+twitter = "themefisher"
+instagram = "themefisher"
+linkedin = "themefisher"
+
+[[props.people]]
+image = "/images/team/team-4.jpg"
+name = "David Williams"
+role = "Senior Marketer"
+facebook = "themefisher"
+twitter = "themefisher"
+instagram = "themefisher"
+linkedin = "themefisher"
+
+[[props.people]]
+image = "/images/team/team-5.jpg"
+name = "Peter Odin"
+role = "App Developer"
+facebook = "themefisher"
+twitter = "themefisher"
+instagram = "themefisher"
+linkedin = "themefisher"
+
+[[props.people]]
+image = "/images/team/team-5.jpg"
+name = "David Spensor"
+role = "Project Manager"
+facebook = "themefisher"
+twitter = "themefisher"
+instagram = "themefisher"
+linkedin = "themefisher"

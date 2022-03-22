@@ -1,0 +1,52 @@
+/*
+THEME: Megakit | HTML5 Agency Template
+VERSION: 1.0.0
+AUTHOR: Themefisher
+
+HOMEPAGE: https://themefisher.com/products/megakit-multipurpose-bootstrap-template/
+DEMO: https://demo.themefisher.com/megakit/
+GITHUB: https://github.com/themefisher/Megakit-Bootstrap-Agency-Template
+
+WEBSITE: https://themefisher.com
+TWITTER: https://twitter.com/themefisher
+FACEBOOK: https://www.facebook.com/themefisher
+*/
+@import 'variables.scss';
+
+@import 'mixins.scss';
+
+@import 'media-query.scss';
+
+@import 'typography.scss';
+
+@import 'common.scss';
+
+@import 'main.scss';
+
+@import 'templates/header.scss';
+
+@import 'templates/navigation.scss';
+@import 'templates/backgrounds.scss';
+
+@import 'templates/slider.scss';
+@import 'templates/intro.scss';
+@import 'templates/about.scss';
+@import 'templates/counter.scss';
+@import 'templates/team.scss';
+
+@import 'templates/service.scss';
+@import 'templates/cta.scss';
+@import 'templates/review.scss';
+@import 'templates/pricing.scss';
+@import 'templates/portfolio.scss';
+@import 'templates/contact.scss';
+@import 'templates/blog.scss';
+@import 'templates/single-post.scss';
+@import 'templates/blog-sidebar.scss';
+
+@import 'templates/footer.scss';
+@import 'templates/responsive.scss';
+
+
+
+

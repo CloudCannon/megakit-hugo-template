@@ -1,0 +1,15 @@
+<section class="cta-2">
+	<div class="container">
+		<div class="cta-block p-5 rounded">
+			<div class="row justify-content-center align-items-center ">
+				<div class="col-lg-7 text-center text-lg-left">
+					<span class="text-color">{{ .preheading | markdownify }}</span>
+					<h2 class="mt-2 text-white">{{ .heading | markdownify }}</h2>
+				</div>
+				<div class="col-lg-4 text-center text-lg-right mt-4 mt-lg-0">
+					<a href="{{ .button.url }}" class="btn btn-main btn-round-full">{{ .button.text }}</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

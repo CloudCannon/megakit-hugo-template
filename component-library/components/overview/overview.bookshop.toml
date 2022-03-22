@@ -1,0 +1,20 @@
+[component]
+structures = ["content_blocks"]
+label = "Overview"
+description = "Overview section"
+icon = "theaters"
+tags = []
+
+[props]
+preheading = "We are creative"
+heading = "We provide best solution to client with their business problem"
+
+  [[props.sections]]
+  icon = "ti-wand"
+  title = "Modern & Responsive design"
+  text = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, aspernatur."
+
+  [[props.sections]]
+  icon = "ti-medall"
+  title = "Awarded licensed company"
+  text = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, aspernatur."

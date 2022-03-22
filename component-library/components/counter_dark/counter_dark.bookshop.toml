@@ -1,0 +1,29 @@
+[component]
+structures = ["content_blocks"]
+label = "Dark Counter"
+description = "Dark Counter section"
+icon = "analytics"
+tags = []
+
+[props]
+[[props.numbers]]
+icon = "ti-check"
+number = 1730
+suffix = "+"
+text = "Projects Done"
+
+[[props.numbers]]
+icon = "ti-flag"
+number = 125
+suffix = "M"
+text = "Users Worldwide"
+
+[[props.numbers]]
+icon = "ti-layers"
+number = 39
+suffix = "Available Countries"
+
+[[props.numbers]]
+icon = "ti-medall"
+number = 14
+suffix = "Awards Won"

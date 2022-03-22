@@ -1,0 +1,13 @@
+[component]
+structures = ["content_blocks"]
+label = "CTA"
+description = "CTA section"
+icon = "grade"
+tags = []
+
+[props]
+background_image = "/images/bg/home-3.jpg"
+preheading = "We create for you"
+heading = "Entrust Your Project to Our Best Team of Professionals"
+text = "Have any project on mind? For immidiate support:"
+phone = "+23 876 65 455"

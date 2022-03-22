@@ -1,0 +1,33 @@
+
+// Pricing Section
+.hero-img{
+	background: url("../images/bg/home-5.jpg");
+	position: absolute;
+	content:"";
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	 @extend .overly;
+}
+
+.h70{
+	height: 55%;
+}
+
+.lh-45{
+	line-height: 45px;
+}
+
+.pricing-header h1{
+	font-size: 70px;
+	font-weight: 300;
+}
+
+.pricing .btn-solid-border{
+	border-color: $border-color;
+	&:Hover{
+		border-color: $primary-color;
+	}
+}
+

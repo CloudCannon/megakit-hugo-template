@@ -1,0 +1,32 @@
+<section class="section portfolio pb-0">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-lg-7 text-center">
+				<div class="section-title">
+					<span class="h6 text-color">{{ .preheading | markdownify }}</span>
+					<h2 class="mt-3 content-title">{{ .heading | markdownify }}</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid">
+		<div class="row portfolio-gallery">
+			{{ range .projects }}
+				<div class="col-lg-4 col-md-6">
+					<div class="portflio-item position-relative mb-4">
+						<a href="{{ .image_path }}" class="popup-gallery">
+							<img src="{{ .image_path }}" alt="portfolio" class="img-fluid w-100">
+
+							<i class="ti-plus overlay-item"></i>
+							<div class="portfolio-item-content">
+								<h3 class="mb-0 text-white">{{ .name }}</h3>
+								<p class="text-white-50">{{ .type }}</p>
+							</div>
+						</a>
+					</div>
+				</div>
+			{{ end }}
+		</div>
+	</div>
+</section>

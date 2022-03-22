@@ -1,0 +1,16 @@
+<section class="about-info section pt-0">
+	<div class="container">
+		<div class="row justify-content-center">
+			{{ $counter := 0 }}
+			{{ range .sections }}
+				{{ $counter = add $counter 1 }}
+				<div class="col-lg-4 col-md-6 col-sm-6">
+					<div class="about-info-item mb-4 mb-lg-0">
+						<h3 class="mb-3"><span class="text-color mr-2 text-md ">0{{ $counter }}.</span>{{ .title }}</h3>
+						<p>{{ .text }}</p>
+					</div>		
+				</div>
+			{{ end }}
+		</div>
+	</div>
+</section>

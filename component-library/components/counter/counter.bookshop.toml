@@ -1,0 +1,25 @@
+[component]
+structures = ["content_blocks"]
+label = "Counter"
+description = "Counter section"
+icon = "analytics"
+tags = []
+
+[props]
+[[props.numbers]]
+number = 1730
+suffix = "+"
+text = "Projects Done"
+
+[[props.numbers]]
+number = 125
+suffix = "M"
+text = "Users Worldwide"
+
+[[props.numbers]]
+number = 39
+suffix = "Available Countries"
+
+[[props.numbers]]
+number = 14
+suffix = "Awards Won"

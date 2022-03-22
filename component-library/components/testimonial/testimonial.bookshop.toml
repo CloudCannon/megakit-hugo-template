@@ -1,0 +1,30 @@
+[component]
+structures = ["content_blocks"]
+label = "Testimonial"
+description = "Testimonial section"
+icon = "question_answer"
+tags = []
+
+[props]
+preheading = "Clients testimonial"
+heading = "Check what's our clients say about us"
+
+[[props.testimonials]]
+quote = "Quam maiores perspiciatis temporibus odio reiciendis error alias debitis atque consequuntur natus iusto recusandae numquam corrupti."
+name = "James Watson"
+role = "Excutive Director,themefisher"
+
+[[props.testimonials]]
+quote = "Consectetur adipisicing elit. Quam maiores perspiciatis temporibus odio reiciendis error alias debitis atque consequuntur natus iusto recusandae ."
+name = "Mickel Tussy"
+role = "Excutive Director,themefisher"
+
+[[props.testimonials]]
+quote = "Quam maiores perspiciatis temporibus odio reiciendis error alias debitis atque consequuntur natus iusto recusandae numquam corrupti."
+name = "James Watson"
+role = "Excutive Director,themefisher"
+
+[[props.testimonials]]
+quote = "Consectetur adipisicing elit. Quam maiores perspiciatis temporibus odio reiciendis error alias debitis atque consequuntur natus iusto recusandae ."
+name = "Mickel Tussy"
+role = "Excutive Director,themefisher"

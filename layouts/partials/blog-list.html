@@ -1,0 +1,54 @@
+{{ partial "hero" . }}
+	
+<section class="section blog-wrap bg-gray">
+  <div class="container">
+    <div class="row">
+
+      {{ range .Paginator.Pages }}
+      <div class="col-lg-6 col-md-6 mb-5">
+        <div class="blog-item">
+          <img loading="lazy" src="{{ .Params.image_path }}" alt="{{ .Title }}" class="img-fluid rounded">
+
+          <div class="blog-item-content bg-white p-5">
+            <div class="blog-item-meta bg-gray pt-2 pb-1 px-3">
+              <span class="text-muted text-capitalize d-inline-block mr-3"><i class="ti-pencil-alt mr-2"></i> 
+                {{ range .Params.categories }} 
+                  {{ $href := print (absURL "categories/") (urlize .) }}
+                  <a href="{{ $href }}">{{ . | humanize }}</a>
+                {{ end }}
+              </span>
+              <span class="text-black text-capitalize d-inline-block mr-3"><i class="ti-user mr-1"></i> {{ .Params.author }}</span>
+              <span class="text-black text-capitalize d-inline-block mr-3"><i class="ti-time mr-1"></i> {{ .Date | time.Format ":date_long" }}</span>
+            </div>
+
+            <h3 class="mt-3 mb-3"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+            <p class="mb-4">{{ .Summary }}</p>
+
+            <a href="{{ .RelPermalink }}" class="btn btn-small btn-main btn-round-full">Read More</a>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+
+    {{ if gt .Paginator.TotalPages 1 }}
+      <div class="row justify-content-center mt-5">
+        <div class="col-lg-6 text-center">
+          <nav class="navigation pagination d-inline-block">
+            <div class="nav-links">
+              {{ if .Paginator.HasPrev }}
+                <a class="prev page-numbers" href="{{ .Paginator.Prev.URL | relURL }}">Prev</a>
+              {{ end }}
+
+              <span aria-current="page" class="page-numbers current">{{ .Paginator.PageNumber }} of {{ .Paginator.TotalPages }}</span>
+
+              {{ if .Paginator.HasNext }}
+                <a class="next page-numbers" href="{{ .Paginator.Next.URL | relURL }}">Next</a>
+              {{ end }}
+            </div>
+          </nav>
+        </div>
+      </div>
+    {{ end }}
+  </div>
+</section>
