@@ -10,6 +10,7 @@ preheading = "What we are"
 heading = "We are dynamic team of creative people"
 text = "We provide consulting services in the area of IFRS and management reporting, helping companies to reach their highest level. We optimize business processes, making them easier."
 image_path = "/images/bg/home-7.jpg"
-[[props.button]]
+
+[props.button]
 text = "Get started"
 url = "/contact/"

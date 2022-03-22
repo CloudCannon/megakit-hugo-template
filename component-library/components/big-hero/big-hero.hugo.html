@@ -3,9 +3,11 @@
 		<div class="row">
 			<div class="col-lg-9 col-md-10">
 				<div class="block">
-					<span class="d-block mb-3 text-white text-capitalize">{{ .preheading | markdownify }}</span>
-					<h1 class="animated fadeInUp mb-5">{{ .heading | markdownify }}</h1>
-					<a href="{{ .link.url }}"  class="btn btn-main animated fadeInUp btn-round-full" aria-label="Get started">{{ .link.text | markdownify }}<i class="btn-icon fa fa-angle-right ml-2"></i></a>
+					<span class="d-block mb-3 text-white text-capitalize">{{ .preheading }}</span>
+					<h1 class="animated fadeInUp mb-5">{{ .heading }}</h1>
+					{{ with .link }}
+						<a href="{{ .url }}"  class="btn btn-main animated fadeInUp btn-round-full" aria-label="Get started">{{ .text }}<i class="btn-icon fa fa-angle-right ml-2"></i></a>
+					{{ end }}
 				</div>
 			</div>
 		</div>

@@ -9,8 +9,9 @@
 					<div class="about-content">
 						<h4 class="mb-3 position-relative">{{ .subheading }}</h4>
 						<p class="mb-5">{{ .content | markdownify }}</p>
-
-						<a href="{{ .link.url }}" class="btn btn-main btn-round-full">{{ .link.text }}</a>
+						{{ with .link }}
+							<a href="{{ .url }}" class="btn btn-main btn-round-full">{{ .text }}</a>
+						{{ end }}
 					</div>
 				</div>
 			</div>

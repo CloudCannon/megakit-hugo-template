@@ -3,16 +3,17 @@
 		<div class="row">
 			<div class="col-lg-6">
 				<div class="about-item pr-3 mb-5 mb-lg-0">
-					<span class="h6 text-color">{{ .preheading | markdownify }}</span>
-					<h2 class="mt-3 mb-4 position-relative content-title">{{ .heading | markdownify }}</h2>
+					<span class="h6 text-color">{{ .preheading }}</span>
+					<h2 class="mt-3 mb-4 position-relative content-title">{{ .heading }}</h2>
 					<p class="mb-5">{{ .text | markdownify }}</p>
-
-					<a href="{{ .button.url }}" class="btn btn-main btn-round-full">{{ .button.text }}</a>
+					{{ with .button }}
+						<a href="{{ .url }}" class="btn btn-main btn-round-full">{{ .text }}</a>
+					{{ end }}
 				</div>
 			</div>
 			<div class="col-lg-6">
 				<div class="about-item-img">
-					<img loading="lazy" src="{{ .image_path | markdownify }}" alt="about-image" class="img-fluid">
+					<img loading="lazy" src="{{ .image_path }}" alt="about-image" class="img-fluid">
 				</div>
 			</div>
 		</div>
