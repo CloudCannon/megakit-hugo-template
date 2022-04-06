@@ -1,0 +1,80 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: Pricing
+  description: Pricing section
+  icon: offline_bolt
+  tags: []
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  preheading: ""
+  heading: ""
+  plans:
+    - name: ""
+      price: ""
+      metric: ""
+      includes:
+        - Up to 1 User
+        - Max 100 Items
+        - 500 Queries
+        - Basic Statistics
+      button:
+        url: ""
+        text: ""
+        highlight: false
+  cta:
+    preheading: ""
+    heading: ""
+    button:
+      url: ""
+      text: ""
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+  preheading: Our pricing
+  heading: No hidden Charges.Choose Your Perfect Plan
+  plans:
+    - name: Free
+      price: $0
+      metric: Per User / Month
+      includes:
+        - Up to 1 User
+        - Max 100 Items
+        - 500 Queries
+        - Basic Statistics
+      button:
+        url: /
+        text: Download Now
+    - name: Basic
+      price: $12
+      metric: Per User / Month
+      includes:
+        - Up to 5 Users
+        - Max 1000 Items
+        - 5000 Queries
+        - Standard Statistics
+      button:
+        url: /
+        text: Sign Up Now
+    - name: Premium
+      price: $39
+      metric: Per User / Month
+      includes:
+        - Unlimited Users
+        - Unlimited Items
+        - Unlimited Queries
+        - Full Statistics
+      button:
+        url: /
+        text: Download Now
+  cta:
+    preheading: For every type business
+    heading: Entrust Your Project to Our Best Team of Professionals
+    button:
+      url: /contact/
+      text: Contact
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs: {}

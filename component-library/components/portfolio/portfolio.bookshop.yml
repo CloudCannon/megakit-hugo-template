@@ -1,0 +1,44 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: Portfolio
+  description: Portfolio section
+  icon: dns
+  tags: []
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  preheading: ""
+  heading: ""
+  projects:
+    - name: ""
+      image_path: ""
+      type: ""
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+  preheading: Our works
+  heading: We have done lots of works, lets check some
+  projects:
+    - name: Project California
+      image_path: /images/portfolio/1.jpg
+      type: Web Development
+    - name: Project California
+      image_path: /images/portfolio/2.jpg
+      type: Web Development
+    - name: Project California
+      image_path: /images/portfolio/3.jpg
+      type: Web Development
+    - name: Project California
+      image_path: /images/portfolio/4.jpg
+      type: Web Development
+    - name: Project California
+      image_path: /images/portfolio/5.jpg
+      type: Web Development
+    - name: Project California
+      image_path: /images/portfolio/6.jpg
+      type: Web Development
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs: {}

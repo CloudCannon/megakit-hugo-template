@@ -1,0 +1,33 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: Dark Counter
+  description: Dark Counter section
+  icon: analytics
+  tags: []
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  numbers:
+    - icon: ""
+      number: 1730
+      suffix: ""
+      text: ""
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+  numbers:
+    - icon: ti-check
+      suffix: +
+      text: Projects Done
+    - icon: ti-flag
+      suffix: M
+      text: Users Worldwide
+    - icon: ti-layers
+      suffix: Available Countries
+    - icon: ti-medall
+      suffix: Awards Won
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs: {}

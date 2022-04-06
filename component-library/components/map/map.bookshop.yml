@@ -1,0 +1,21 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: Map
+  description: Map section
+  icon: location_searching
+  tags: []
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  latitude: 40.712776
+  longitude: -74.005974
+  name: ""
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+  name: Megakit
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs: {}

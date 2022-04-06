@@ -55,4 +55,4 @@ replacements = "local/component-library -> ../component-library"
 path = 'local/component-library'
 
 [[module.imports]]
-path = 'github.com/cloudcannon/bookshop/hugo/v2'
+path = 'github.com/cloudcannon/bookshop/hugo/v3'

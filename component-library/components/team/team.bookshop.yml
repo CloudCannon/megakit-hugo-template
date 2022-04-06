@@ -1,0 +1,72 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: Team
+  description: Team block
+  icon: supervisor_account
+  tags: []
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  preheading: ""
+  heading: ""
+  people:
+    - image: ""
+      name: ""
+      role: ""
+      facebook: ""
+      twitter: ""
+      instagram: ""
+      linkedin: ""
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+  preheading: Our Team
+  heading: Expert Team member to get best service
+  people:
+    - image: /images/team/team-1.jpg
+      name: David Spensor
+      role: Project Manager
+      facebook: themefisher
+      twitter: themefisher
+      instagram: themefisher
+      linkedin: themefisher
+    - image: /images/team/team-2.jpg
+      name: Jason Roy
+      role: UI/UX Designer
+      facebook: themefisher
+      twitter: themefisher
+      instagram: themefisher
+      linkedin: themefisher
+    - image: /images/team/team-3.jpg
+      name: Henry Oswald
+      role: Developer
+      facebook: themefisher
+      twitter: themefisher
+      instagram: themefisher
+      linkedin: themefisher
+    - image: /images/team/team-4.jpg
+      name: David Williams
+      role: Senior Marketer
+      facebook: themefisher
+      twitter: themefisher
+      instagram: themefisher
+      linkedin: themefisher
+    - image: /images/team/team-5.jpg
+      name: Peter Odin
+      role: App Developer
+      facebook: themefisher
+      twitter: themefisher
+      instagram: themefisher
+      linkedin: themefisher
+    - name: David Spensor
+      image: /images/team/team-5.jpg
+      role: Project Manager
+      facebook: themefisher
+      twitter: themefisher
+      instagram: themefisher
+      linkedin: themefisher
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs: {}

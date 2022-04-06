@@ -1,0 +1,33 @@
+# Metadata about this component, to be used in the CMS
+spec:
+  structures:
+    - content_blocks
+  label: Start
+  description: Start block
+  icon: flight_takeoff
+  tags: []
+
+# Defines the structure of this component, as well as the default values
+blueprint:
+  preheading: ""
+  heading: ""
+  text: ""
+  image_path: ""
+  button:
+    text: ""
+    url: ""
+
+# Overrides any fields in the blueprint when viewing this component in the component browser
+preview:
+  preheading: What we are
+  heading: We are dynamic team of creative people
+  text: We provide consulting services in the area of IFRS and management
+    reporting, helping companies to reach their highest level. We optimize
+    business processes, making them easier.
+  image_path: /images/bg/home-7.jpg
+  button:
+    text: Get started
+    url: /contact/
+
+# Any extra CloudCannon inputs configuration to apply to the blueprint
+_inputs: {}
