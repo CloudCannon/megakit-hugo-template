@@ -16,8 +16,8 @@
             <ul class="navbar-nav ml-auto">
               {{ $current := . }}
               {{ range .Site.Data.nav.menu }}
-                <li class="nav-item {{ if eq $current.RelPermalink .URL }}active{{ end }}">
-                  <a class="nav-link" href="{{ .URL }}">{{ .name }}</a>
+                <li class="nav-item {{ if eq $current.RelPermalink .url }}active{{ end }}">
+                  <a class="nav-link" href="{{ .url }}">{{ .name }}</a>
                 </li>
               {{ end }}
             </ul>

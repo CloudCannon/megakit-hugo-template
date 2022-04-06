@@ -1,22 +1,29 @@
 menu:
   - name: "Home"
-    URL: "/"
+    url: "/"
+    open_in_new_tab: true
     weight: 1
   - name: "About"
-    URL: "/about/"
+    url: "/about/"
+    open_in_new_tab: true
     weight: 2
   - name: "Services"
-    URL: "/services/"
+    url: "/services/"
+    open_in_new_tab: true
     weight: 3
   - name: "Portfolio"
-    URL: "/portfolio/"
+    url: "/portfolio/"
+    open_in_new_tab: true
     weight: 4
   - name: "Pricing"
-    URL: "/pricing/"
+    url: "/pricing/"
+    open_in_new_tab: true
     weight: 4
   - name: "Blog"
-    URL: "/blog/"
+    url: "/blog/"
+    open_in_new_tab: true
     weight: 5
   - name: "Contact"
-    URL: "/contact/"
+    url: "/contact/"
+    open_in_new_tab: true
     weight: 6
