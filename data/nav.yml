@@ -1,0 +1,22 @@
+menu:
+  - name: "Home"
+    URL: "/"
+    weight: 1
+  - name: "About"
+    URL: "/about/"
+    weight: 2
+  - name: "Services"
+    URL: "/services/"
+    weight: 3
+  - name: "Portfolio"
+    URL: "/portfolio/"
+    weight: 4
+  - name: "Pricing"
+    URL: "/pricing/"
+    weight: 4
+  - name: "Blog"
+    URL: "/blog/"
+    weight: 5
+  - name: "Contact"
+    URL: "/contact/"
+    weight: 6
