@@ -15,9 +15,9 @@
           <div class="collapse navbar-collapse text-center" id="navbarsExample09">
             <ul class="navbar-nav ml-auto">
               {{ $current := . }}
-              {{ range .Site.Menus.main }}
+              {{ range .Site.Data.nav.menu }}
                 <li class="nav-item {{ if eq $current.RelPermalink .URL }}active{{ end }}">
-                  <a class="nav-link" href="{{ .URL }}">{{ .Name }}</a>
+                  <a class="nav-link" href="{{ .URL }}">{{ .name }}</a>
                 </li>
               {{ end }}
             </ul>
