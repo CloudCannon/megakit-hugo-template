@@ -1,0 +1,83 @@
+
+<footer class="footer section">
+	<div class="container">
+	  <div class="row">
+		<div class="col-lg-3 col-md-6 col-sm-6">
+		  <div class="widget">
+			<h4 class="text-capitalize mb-4">Company</h4>
+  
+			<ul class="list-unstyled footer-menu lh-35">
+			  <li><a href="/about/">Terms & Conditions</a></li>
+			  <li><a href="/about/">Privacy Policy</a></li>
+			  <li><a href="/contact/">Support</a></li>
+			  <li><a href="/contact/">FAQ</a></li>
+			</ul>
+		  </div>
+		</div>
+		<div class="col-lg-2 col-md-6 col-sm-6">
+		  <div class="widget">
+			<h4 class="text-capitalize mb-4">Quick Links</h4>
+  
+			<ul class="list-unstyled footer-menu lh-35">
+			  <li><a href="/about/">About</a></li>
+			  <li><a href="/services/">Services</a></li>
+			  <li><a href="/blog/">Blogs</a></li>
+			  <li><a href="/contact/">Contact</a></li>
+			</ul>
+		  </div>
+		</div>
+		<div class="col-lg-3 col-md-6 col-sm-6 mx-auto">
+		  <div class="widget">
+			<h4 class="text-capitalize mb-4">Subscribe Us</h4>
+			<p>Subscribe to get latest news article and resources </p>
+  
+			<form action="#" class="sub-form">
+			  <input type="text" class="form-control mb-3" placeholder="Subscribe Now ...">
+			  <a href="#" class="btn btn-main btn-small">subscribe</a>
+			</form>
+		  </div>
+		</div>
+  
+		<div class="col-lg-3 col-sm-6">
+		  <div class="widget">
+			<div class="logo mb-4">
+			  <h3>Mega<span>kit.</span></h3>
+			</div>
+			{{ if .Site.Data.company.support.email }}
+				<h6><a href="mailto:{{ .Site.Data.company.support.email }}">{{ .Site.Data.company.support.email }}</a></h6>
+			{{ end }}
+
+			{{ if .Site.Data.company.support.phone }}
+				<a href="tel:{{ .Site.Data.company.support.phone }}"><span class="text-color h4">{{ .Site.Data.company.support.phone }}</span></a>
+			{{ end }}
+		  </div>
+		</div>
+	  </div>
+  
+	  <div class="footer-btm pt-4">
+		<div class="row">
+		  <div class="col-lg-6">
+			<div class="copyright">
+				{{ .Site.Data.company.copyright_html | safeHTML }}
+			</div>
+		  </div>
+		  <div class="col-lg-6 text-left text-lg-right">
+			<ul class="list-inline footer-socials">
+				{{ if .Site.Data.company.facebook }}
+					<li class="list-inline-item"><a href="{{ .Site.Data.company.facebook }}"><i class="fab fa-facebook-f mr-2"></i>Facebook</a></li>
+				{{ end }}
+				{{ if .Site.Data.company.twitter }}
+					<li class="list-inline-item"><a href="{{ .Site.Data.company.twitter }}"><i class="fab fa-twitter mr-2"></i>Twitter</a></li>
+				{{ end }}
+				{{ if .Site.Data.company.pinterest }}
+					<li class="list-inline-item"><a href="{{ .Site.Data.company.pinterest }}"><i class="fab fa-pinterest-p mr-2 "></i>Pinterest</a></li>
+				{{ end }}
+				{{ if .Site.Data.company.github }}
+					<li class="list-inline-item"><a href="{{ .Site.Data.company.github }}"><i class="fab fa-github mr-2 "></i>GitHub</a></li>
+				{{ end }}
+			</ul>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </footer>
