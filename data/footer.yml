@@ -1,0 +1,26 @@
+company:
+  - name: "Terms & Conditions"
+    url: "/about/"
+    open_in_new_tab: false
+  - name: "Privacy Policy"
+    url: "/about/"
+    open_in_new_tab: false
+  - name: "Support"
+    url: "/contact/"
+    open_in_new_tab: false
+  - name: "FAQ"
+    url: "/contact/"
+    open_in_new_tab: false
+quick_links:
+  - name: "About"
+    url: "/about/"
+    open_in_new_tab: false
+  - name: "Services"
+    url: "/services/"
+    open_in_new_tab: false
+  - name: "Blogs"
+    url: "/blog/"
+    open_in_new_tab: false
+  - name: "Contact"
+    url: "/contact/"
+    open_in_new_tab: false
