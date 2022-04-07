@@ -20,3 +20,6 @@ menu:
   - name: "Contact"
     url: "/contact/"
     open_in_new_tab: false
+logo:
+  firstpart: Mega
+  lastpart: kit.
