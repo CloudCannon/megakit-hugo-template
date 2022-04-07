@@ -2,28 +2,21 @@ menu:
   - name: "Home"
     url: "/"
     open_in_new_tab: true
-    weight: 1
   - name: "About"
     url: "/about/"
     open_in_new_tab: true
-    weight: 2
   - name: "Services"
     url: "/services/"
     open_in_new_tab: true
-    weight: 3
   - name: "Portfolio"
     url: "/portfolio/"
     open_in_new_tab: true
-    weight: 4
   - name: "Pricing"
     url: "/pricing/"
     open_in_new_tab: true
-    weight: 4
   - name: "Blog"
     url: "/blog/"
     open_in_new_tab: true
-    weight: 5
   - name: "Contact"
     url: "/contact/"
     open_in_new_tab: true
-    weight: 6
