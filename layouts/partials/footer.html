@@ -37,7 +37,7 @@
 		<div class="col-lg-3 col-sm-6">
 		  <div class="widget">
 			<div class="logo mb-4">
-			  <h3>Mega<span>kit.</span></h3>
+			  <h3>{{ .Site.Data.nav.logo.firstpart -}}<span> {{- .Site.Data.nav.logo.lastpart }}</span></h3>
 			</div>
 			{{ if .Site.Data.company.support.email }}
 				<h6><a href="mailto:{{ .Site.Data.company.support.email }}">{{ .Site.Data.company.support.email }}</a></h6>
