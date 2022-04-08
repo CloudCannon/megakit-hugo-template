@@ -1,24 +1,24 @@
 menu:
-  - name: "Home"
-    url: "/"
+  - name: Home
+    url: /
+    open_in_new_tab: true
+  - name: About
+    url: /about/
     open_in_new_tab: false
-  - name: "About"
-    url: "/about/"
+  - name: Services
+    url: /services/
     open_in_new_tab: false
-  - name: "Services"
-    url: "/services/"
+  - name: Portfolio
+    url: /portfolio/
     open_in_new_tab: false
-  - name: "Portfolio"
-    url: "/portfolio/"
+  - name: Pricing
+    url: /pricing/
     open_in_new_tab: false
-  - name: "Pricing"
-    url: "/pricing/"
+  - name: Blog
+    url: /blog/
     open_in_new_tab: false
-  - name: "Blog"
-    url: "/blog/"
-    open_in_new_tab: false
-  - name: "Contact"
-    url: "/contact/"
+  - name: Contact
+    url: /contact/
     open_in_new_tab: false
 logo:
   firstpart: Mega
