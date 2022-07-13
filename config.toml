@@ -11,6 +11,9 @@ category = "categories"
 [permalinks]
 posts = ":section/:year/:month/:day/:title/"
 
+[markup.goldmark.renderer]
+unsafe = true
+
 [module]
 replacements = "local/component-library -> ../component-library"
 
