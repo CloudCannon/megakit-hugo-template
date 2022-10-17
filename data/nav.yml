@@ -2,24 +2,43 @@ menu:
   - name: "Home"
     url: "/"
     open_in_new_tab: false
+    sub_menu_item: []
   - name: "About"
     url: "/about/"
     open_in_new_tab: false
+    sub_menu_item: []
   - name: "Services"
     url: "/services/"
     open_in_new_tab: false
+    sub_menu_item: []
   - name: "Portfolio"
     url: "/portfolio/"
     open_in_new_tab: false
+    sub_menu_item:
+      - name: test 
+        url: /asd/
+        open_in_new_tab: false
+      - name: test test test test test test 
+        url: /about/
+        open_in_new_tab: false
   - name: "Pricing"
     url: "/pricing/"
     open_in_new_tab: false
+    sub_menu_item:
+      - name: test 
+        url: /asd
+        open_in_new_tab: false
+      - name: test test 
+        url: /asd
+        open_in_new_tab: false
   - name: "Blog"
     url: "/blog/"
     open_in_new_tab: false
+    sub_menu_item: []
   - name: "Contact"
     url: "/contact/"
     open_in_new_tab: false
+    sub_menu_item: []
 logo:
   firstpart: Mega
   lastpart: kit.
