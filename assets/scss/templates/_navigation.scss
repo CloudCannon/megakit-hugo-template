@@ -33,9 +33,11 @@
   } 
   &--dropdown{
     position: relative;
-    &:hover{
-      .navItemDropdown{
-        display: block;
+    @media (min-width:992px) {
+      &:hover{
+        .navItemDropdown{
+          display: block;
+        }
       }
     }
   }
