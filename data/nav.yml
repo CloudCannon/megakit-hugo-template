@@ -2,11 +2,17 @@ menu:
   - name: "Home"
     url: "/"
     open_in_new_tab: false
-    sub_menu_item: []
+    sub_menu_item:
+      - name:
+        url: 
+        open_in_new_tab:   
   - name: "About"
     url: "/about/"
     open_in_new_tab: false
-    sub_menu_item: []
+    sub_menu_item:
+      - name:
+        url: 
+        open_in_new_tab:   
   - name: "Services"
     url: "/services/"
     open_in_new_tab: false
@@ -34,11 +40,17 @@ menu:
   - name: "Blog"
     url: "/blog/"
     open_in_new_tab: false
-    sub_menu_item: []
+    sub_menu_item:
+      - name:
+        url: 
+        open_in_new_tab:   
   - name: "Contact"
     url: "/contact/"
     open_in_new_tab: false
-    sub_menu_item: []
+    sub_menu_item:
+      - name:
+        url: 
+        open_in_new_tab:   
 logo:
   firstpart: Mega
   lastpart: kit.
