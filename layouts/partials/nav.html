@@ -21,7 +21,7 @@
                     <a class="nav-link" href="{{ .url }}" {{ if .open_in_new_tab }}target="_blank"{{ end }}>{{ .name }}</a>
                     <div class="navItemDropdown">
                       <ul class="navItemDropdown__list">
-                        {{ range .sub_menu_item }}
+                        {{ range .sub_menu_items }}
                           <li class="nav-item {{ if eq $current.RelPermalink .url }}active{{ end }} navItemDropdown__list__item" >
                             <a class="nav-link" href="{{ .url }}" {{ if .open_in_new_tab }}target="_blank"{{ end }}>{{ .name }}</a>
                           <div>

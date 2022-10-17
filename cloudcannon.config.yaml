@@ -7,7 +7,18 @@ collections_config:
       - content
       - visual
 
+_structures: 
+  sub_menu_items: 
+    values:
+      - name:
+        url: 
+        open_in_new_tab:   
 _inputs:
+  sub_menu_items: 
+    type: array
+    options:
+      structures: _structures.sub_menu_items
+
   content:
     type: markdown
   icon:

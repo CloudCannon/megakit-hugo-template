@@ -2,25 +2,19 @@ menu:
   - name: "Home"
     url: "/"
     open_in_new_tab: false
-    sub_menu_item:
-      - name:
-        url: 
-        open_in_new_tab:   
+    sub_menu_items:
   - name: "About"
     url: "/about/"
     open_in_new_tab: false
-    sub_menu_item:
-      - name:
-        url: 
-        open_in_new_tab:   
+    sub_menu_items:
   - name: "Services"
     url: "/services/"
     open_in_new_tab: false
-    sub_menu_item: []
+    sub_menu_items: 
   - name: "Portfolio"
     url: "/portfolio/"
     open_in_new_tab: false
-    sub_menu_item:
+    sub_menu_items:
       - name: test 
         url: /asd/
         open_in_new_tab: false
@@ -30,7 +24,7 @@ menu:
   - name: "Pricing"
     url: "/pricing/"
     open_in_new_tab: false
-    sub_menu_item:
+    sub_menu_items:
       - name: test 
         url: /asd
         open_in_new_tab: false
@@ -40,17 +34,11 @@ menu:
   - name: "Blog"
     url: "/blog/"
     open_in_new_tab: false
-    sub_menu_item:
-      - name:
-        url: 
-        open_in_new_tab:   
+    sub_menu_items:
   - name: "Contact"
     url: "/contact/"
     open_in_new_tab: false
-    sub_menu_item:
-      - name:
-        url: 
-        open_in_new_tab:   
+    sub_menu_items:
 logo:
   firstpart: Mega
   lastpart: kit.
