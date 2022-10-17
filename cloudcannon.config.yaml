@@ -10,9 +10,11 @@ collections_config:
 _structures: 
   sub_menu_items: 
     values:
-      - name:
-        url: 
-        open_in_new_tab:   
+      - value: 
+          name:
+          url: 
+          open_in_new_tab:   
+          
 _inputs:
   sub_menu_items: 
     type: array
