@@ -16,7 +16,7 @@
             <ul class="navbar-nav ml-auto">
               {{ $current := . }}
               {{ range .Site.Data.nav.menu }}
-                {{ if .sub_menu_item }}
+                {{ if .sub_menu_items }}
                   <li class="nav-item {{ if eq $current.RelPermalink .url }}active{{ end }} nav-item--dropdown">
                     <a class="nav-link" href="{{ .url }}" {{ if .open_in_new_tab }}target="_blank"{{ end }}>{{ .name }}</a>
                     <div class="navItemDropdown">
