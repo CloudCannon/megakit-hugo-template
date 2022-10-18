@@ -16,6 +16,8 @@ collections_config:
     _inputs: 
       categories: 
         type: array
+      categories[*]:
+        type: text
 
 _structures: 
   sub_menu_items: 
