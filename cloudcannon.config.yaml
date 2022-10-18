@@ -1,8 +1,14 @@
 collections_config:
   pages:
+    schemas: 
+      default:
+        path: schemas/pages.md
     _enabled_editors:
       - visual
   posts:
+    schemas: 
+      default:
+        path: schemas/posts.md  
     _enabled_editors:
       - content
       - visual
