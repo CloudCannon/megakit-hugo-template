@@ -1,7 +1,7 @@
 ---
 date: 
 title: 
-categories: []
+categories: 
 image_path:
 author:
 ---

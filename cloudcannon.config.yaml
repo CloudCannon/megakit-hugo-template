@@ -12,6 +12,10 @@ collections_config:
     _enabled_editors:
       - content
       - visual
+    
+    _inputs: 
+      categories: 
+        type: array
 
 _structures: 
   sub_menu_items: 
