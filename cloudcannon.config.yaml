@@ -22,12 +22,12 @@ collections_config:
 _structures: 
   menu_items:
     values: 
-      - label: "link"
+      - label: "Link"
         value:
           name:
           url: 
-          open_in_new_tab:   
-      - label: "sub menu"
+          open_in_new_tab: false
+      - label: "Sub menu"
         value: 
           label: 
           sub_menu_items: 
@@ -37,7 +37,7 @@ _structures:
       - value: 
           name:
           url: 
-          open_in_new_tab:   
+          open_in_new_tab: false
 
 _inputs:
   sub_menu_items: 
