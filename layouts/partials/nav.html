@@ -18,7 +18,7 @@
               {{ $current := . }}
               {{ range .Site.Data.nav.menu }}
                 {{ if .sub_menu_items }}
-                  <li class="nav-item nav-item--dropdown">
+                  <div class="nav-item nav-item--dropdown">
                     <a class="nav-link {{ if eq $current.RelPermalink .url }}active{{ end }}" href="{{ .url }}" {{ if .open_in_new_tab }}target="_blank"{{ end }}>{{ .name }}</a>
                     <div class="navItemDropdown">
                       <ul class="navItemDropdown__list">
@@ -30,7 +30,7 @@
                         {{ end }}
                       </ul>   
                     </div>
-                  </li>
+                  </div>
                 {{ else }}
                   <li class="nav-item">
                     <a class="nav-link {{ if eq $current.RelPermalink .url }}active{{ end }}" href="{{ .url }}" {{ if .open_in_new_tab }}target="_blank"{{ end }}>{{ .name }}</a>
