@@ -4,6 +4,7 @@
   background-position: 10% 0%;
   padding:200px 0;
   position: relative;
+  background-attachment: fixed;
   @include tablet {
     padding:150px 0;
   }
