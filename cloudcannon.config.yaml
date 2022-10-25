@@ -34,10 +34,14 @@ _structures:
 
   sub_menu_items: 
     values:
-      - value: 
+      - label: "Link"
+        value: 
           name:
           url: 
           open_in_new_tab: false
+      - label: "Divider"
+        description: "Straight line divider"
+
 
 _inputs:
   sub_menu_items: 
