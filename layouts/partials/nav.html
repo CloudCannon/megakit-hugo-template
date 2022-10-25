@@ -18,25 +18,23 @@
               {{ $current := . }}
               {{ range .Site.Data.nav.menu_items }}
                 {{ if eq ._id "sub_menu" }}
-                  {{ range .sub_menu_items }}
-                    {{ if eq ._id "sub_menu_link" }}
                       <div class="nav-item nav-item--dropdown">
                         <p class="nav-link">{{ .label }}</p>
                         <div class="navItemDropdown">
                           <ul class="navItemDropdown__list">
                             {{ range .sub_menu_items }}
-                              <li class="nav-item navItemDropdown__list__item" >
-                                <a class="nav-link {{ if eq $current.RelPermalink .url }} active {{ end }}" href="{{ .url }}" {{ if .open_in_new_tab }}target="_blank"{{ end }}>{{ .name }}</a>
-                              </li>
-                              <div>
+                              {{ if eq ._id "sub_menu_link" }}
+                                <li class="nav-item navItemDropdown__list__item" >
+                                  <a class="nav-link {{ if eq $current.RelPermalink .url }} active {{ end }}" href="{{ .url }}" {{ if .open_in_new_tab }}target="_blank"{{ end }}>{{ .name }}</a>
+                                </li>
+                              {{ else }}
+                                <div class="dropdown-divider"></div>
+                              {{ end }}
+          
                             {{ end }}
                           </ul>   
                         </div>
                       </div> 
-                    {{ else }}
-                      <div class="dropdown-divider"></div>
-                    {{ end }}
-                  {{ end }}
                 {{ else if eq ._id "link"}}
                   <li class="nav-item">
                     <a class="nav-link {{ if eq $current.RelPermalink .url }}active{{ end }}" href="{{ .url }}" {{ if .open_in_new_tab }}target="_blank"{{ end }}>{{ .name }}</a>

@@ -10,6 +10,11 @@
     letter-spacing: .5px;
     transition: all .25s ease;
     border-radius: .25rem;
+    margin-bottom: 0;
+    line-height: 1.5;
+    &:hover{
+      cursor: pointer;
+    }
   }
     
   .nav-link:hover, .nav-link:focus,
