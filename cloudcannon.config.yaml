@@ -18,23 +18,6 @@ collections_config:
         type: array
       categories[*]:
         type: text
-  data:
-    _inputs:
-      logo: 
-        type: image
-      link: 
-        type: checkbox
-      url:
-        type: url
-        hidden: "link"
-      open_in_new_tab:
-        hidden: "link"
-      sub_menu_items: 
-        type: array
-        comment: Sub nav links which will appear in a dropdown menu when hovering over the parent label. If no sub menu items are present there will be no dropdown menu. 
-        options:
-          structures: _structures.sub_menu_items
-
 _structures: 
   sub_menu_items: 
     values:
@@ -51,6 +34,20 @@ _structures:
 
 
 _inputs:
+  logo: 
+    type: image
+  link: 
+    type: checkbox
+  url:
+    type: url
+    hidden: "link"
+  open_in_new_tab:
+    hidden: "link"
+  sub_menu_items: 
+    type: array
+    comment: Sub nav links which will appear in a dropdown menu when hovering over the parent label. If no sub menu items are present there will be no dropdown menu. 
+    options:
+      structures: _structures.sub_menu_items
   content:
     type: markdown
   icon:
