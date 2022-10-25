@@ -1,31 +1,7 @@
 logo:
-  firstpart: Mega
-  lastpart: kit.
 menu_items:
-  - _id: link
-    name: Pricing
+  - name: Pricing
+    link: true
     url: /pricing/
     open_in_new_tab: false
-  - _id: link
-    name: Blog
-    url: /blog/
-    open_in_new_tab: false
-  - _id: sub_menu
-    label: Company
-    sub_menu_items:
-      - _id: sub_menu_link
-        name: About
-        url: /about/
-        open_in_new_tab: false
-      - _id: sub_menu_link
-        name: Services
-        url: /services/
-        open_in_new_tab: false
-      - _id: sub_menu_link
-        name: Portfolio
-        url: /portfolio/
-        open_in_new_tab: false
-  - _id: link
-    name: Contact
-    url: /contact/
-    open_in_new_tab: false
+    sub_menu_items: 
