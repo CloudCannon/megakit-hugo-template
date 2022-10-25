@@ -24,11 +24,13 @@ _structures:
     values: 
       - label: "Link"
         value:
+          _id: "link"
           name:
           url: 
           open_in_new_tab: false
       - label: "Sub menu"
         value: 
+          _id: "sub_menu"
           label: 
           sub_menu_items: 
 
@@ -36,11 +38,14 @@ _structures:
     values:
       - label: "Link"
         value: 
+          _id: "sub_menu_link"
           name:
           url: 
           open_in_new_tab: false
       - label: "Divider"
         description: "Straight line divider"
+        value:
+          _id: "sub_menu_divider"
 
 
 _inputs:
