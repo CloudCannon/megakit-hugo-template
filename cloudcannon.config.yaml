@@ -23,15 +23,15 @@ _structures:
   menu_items:
     values: 
       - label: "Link"
-        value:
         icon: link
+        value:
           _id: "link"
           name:
           url: 
           open_in_new_tab: false
       - label: "Drop down menu"
-        value: 
         icon: arrow_drop_down
+        value: 
           _id: "drop_down_menu"
           label: 
           sub_menu_items: 
@@ -39,12 +39,14 @@ _structures:
   sub_menu_items: 
     values:
       - label: "Link"
+        icon: link
         value: 
           _id: "sub_menu_link"
           name:
           url: 
           open_in_new_tab: false
       - label: "Divider"
+        icon: maximize
         description: "Straight line divider"
         value:
           _id: "sub_menu_divider"
