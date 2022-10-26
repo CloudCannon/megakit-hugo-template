@@ -49,6 +49,9 @@ _structures:
 
 
 _inputs:
+  logo: 
+    type: image
+
   sub_menu_items: 
     type: array
     comment: Sub nav links which will appear in a dropdown menu when hovering over the parent label. If no sub menu items are present there will be no dropdown menu. 
