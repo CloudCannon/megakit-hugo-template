@@ -19,11 +19,13 @@
           <div class="collapse navbar-collapse text-center" id="navbarsExample09">
             <ul class="navbar-nav ml-auto">
               {{ $current := . }}
+              {{ $drop_down_menu_count := 0 }}
               {{ range .Site.Data.nav.menu_items }}
                 {{ if eq ._id "drop_down_menu" }}
+                      {{ $drop_down_menu_count = add $drop_down_menu_count 1 }}
                       <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ .label }}</a>
-                        <div class="navItemDropdown dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink-{{ $drop_down_menu_count }}" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ .label }}</a>
+                        <div class="navItemDropdown dropdown-menu" aria-labelledby="navbarDropdownMenuLink-{{ $drop_down_menu_count }}">
                             {{ range .sub_menu_items }}
                               {{ if eq ._id "sub_menu_link" }}
                                   <a class="dropdown-item {{ if eq $current.RelPermalink .url }} active {{ end }}" href="{{ .url }}" {{ if .open_in_new_tab }}target="_blank"{{ end }}>{{ .name }}</a>
