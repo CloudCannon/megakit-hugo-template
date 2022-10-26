@@ -4,3 +4,6 @@ rm -rf node_modules
 # Install and run generate
 npm i
 npx "@bookshop/generate"
+
+# Install pagefind
+npx -y pagefind@latest --source public
