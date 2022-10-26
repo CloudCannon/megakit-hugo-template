@@ -24,13 +24,15 @@ _structures:
     values: 
       - label: "Link"
         value:
+        icon: link
           _id: "link"
           name:
           url: 
           open_in_new_tab: false
-      - label: "Sub menu"
+      - label: "Drop down menu"
         value: 
-          _id: "sub_menu"
+        icon: arrow_drop_down
+          _id: "drop_down_menu"
           label: 
           sub_menu_items: 
 

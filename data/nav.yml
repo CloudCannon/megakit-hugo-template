@@ -8,7 +8,7 @@ menu_items:
     name: Blog
     url: /blog/
     open_in_new_tab: false
-  - _id: sub_menu
+  - _id: "drop_down_menu"
     label: Company
     sub_menu_items:
       - _id: sub_menu_link

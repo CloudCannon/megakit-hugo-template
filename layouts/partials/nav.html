@@ -17,7 +17,7 @@
             <ul class="navbar-nav ml-auto">
               {{ $current := . }}
               {{ range .Site.Data.nav.menu_items }}
-                {{ if eq ._id "sub_menu" }}
+                {{ if eq ._id "drop_down_menu" }}
                       <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ .label }}</a>
                         <div class="navItemDropdown dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
