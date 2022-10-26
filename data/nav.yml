@@ -1,4 +1,5 @@
-logo:
+logo_dark:
+logo_light:
 menu_items:
   - _id: link
     name: Pricing
@@ -8,21 +9,6 @@ menu_items:
     name: Blog
     url: /blog/
     open_in_new_tab: false
-  - _id: "drop_down_menu"
-    label: Company
-    sub_menu_items:
-      - _id: sub_menu_link
-        name: About
-        url: /about/
-        open_in_new_tab: false
-      - _id: sub_menu_link
-        name: Services
-        url: /services/
-        open_in_new_tab: false
-      - _id: sub_menu_link
-        name: Portfolio
-        url: /portfolio/
-        open_in_new_tab: false
   - _id: link
     name: Contact
     url: /contact/

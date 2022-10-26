@@ -4,9 +4,12 @@
       <div class="col-lg-12">
         <nav class="navbar navbar-expand-lg px-0 py-4">
           <a class="navbar-brand" href="/">
-            {{/*  {{ .Site.Data.nav.logo.firstpart -}}<span> {{- .Site.Data.nav.logo.lastpart }}</span>  */}}
-            <img src="{{ .Site.Data.nav.logo }}" alt="Company Logo">
-          </a>
+            {{ if .Site.Data.nav.logo_dark }}
+                <img src="{{ .Site.Data.nav.logo_dark }}" alt="Company Logo">
+            {{ else }}
+              <img src="{{ .Site.Data.nav.logo_light }}" alt="Company Logo">
+            {{ end }}
+            </a>
     
           <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample09"
             aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
