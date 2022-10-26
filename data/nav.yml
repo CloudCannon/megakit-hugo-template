@@ -1,6 +1,4 @@
 logo:
-  firstpart: Mega
-  lastpart: kit.
 menu_items:
   - _id: link
     name: Pricing
