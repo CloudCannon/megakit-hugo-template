@@ -23,16 +23,6 @@
 								<h2 class="mt-3 mb-4">{{ .Title }}</h2>
 
 								{{ .Content }}
-
-								<div class="tag-option mt-5 d-block d-md-flex justify-content-between align-items-center">
-									<ul class="list-inline">
-										<li class="list-inline-item"> Share: </li>
-										<li class="list-inline-item"><a href="#" ><i class="fab fa-facebook-f"
-													aria-hidden="true"></i></a></li>
-										<li class="list-inline-item"><a href="#" ><i class="fab fa-twitter"
-													aria-hidden="true"></i></a></li>
-									</ul>
-								</div>
 							</div>
 						</div>
 					</div>
@@ -71,6 +61,18 @@
 
 			<div class="col-lg-4 mt-5 mt-lg-0">
 				<div class="sidebar-wrap">
+					<div class="sidebar-widget bg-white rounded tags p-4 mb-3">
+						{{ if gt (.Params.categories) 1 }}
+							<h5 class="mb-4">Categories</h5>
+						{{ else }}
+							<h5 class="mb-4">Category</h5>
+						{{ end }}
+						{{ range .Params.categories }} 
+							{{ $href := print (absURL "categories/") (urlize .) }}
+							<a href="{{ $href }}">{{ . | humanize }}</a>
+						{{ end }}
+					</div>
+
 					<div class="sidebar-widget latest-post card border-0 p-4 mb-3">
 						<h5>Latest Posts</h5>
 
@@ -86,13 +88,6 @@
 						{{ end }}
 					</div>
 
-					<div class="sidebar-widget bg-white rounded tags p-4 mb-3">
-						<h5 class="mb-4">Categories</h5>
-
-						{{ range ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
-							<a href="{{ .Permalink }}">{{ .Title }}</a></li>
-						{{ end }}
-					</div>
 				</div>
 			</div>
 		</div>
