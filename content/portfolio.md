@@ -1,5 +1,6 @@
 ---
 title: "Latest works"
+description: 
 hero:
   title: "Portfolio"
   background_image: "/images/bg/home-2.jpg"

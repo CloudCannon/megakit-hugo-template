@@ -1,5 +1,6 @@
 ---
 title: "Our pricing"
+description:
 hero:
   title: "Pricing Package"
   background_image: "/images/bg/home-2.jpg"

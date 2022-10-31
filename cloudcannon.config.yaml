@@ -53,6 +53,8 @@ _structures:
 
 
 _inputs:
+  description:
+    description: Text used for the SEO meta description tag
   favicon:
     type: image
   logo_dark: 

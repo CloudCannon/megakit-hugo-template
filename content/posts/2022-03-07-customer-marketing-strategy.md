@@ -1,6 +1,7 @@
 ---
 date: 2022-03-07
 title: Customer marketing strategy
+description:
 categories:
   - Marketing
 image_path: /images/blog/3.jpg

@@ -1,5 +1,6 @@
 ---
 title: "Contact Us"
+description:
 hero:
   title: "Get In Touch"
   background_image: "/images/bg/home-2.jpg"

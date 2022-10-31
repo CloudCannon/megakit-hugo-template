@@ -1,5 +1,6 @@
 ---
 title: "Our Services"
+description:
 hero:
   title: "What We do"
   background_image: "/images/bg/home-2.jpg"

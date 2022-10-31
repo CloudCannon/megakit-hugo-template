@@ -1,10 +1,10 @@
+favicon: /images/favicon.png
+logo_dark: /uploads/megakit-logo-dark.svg
+logo_light: /uploads/megakit-logo.svg
 facebook: https://www.facebook.com/themefisher
 twitter: https://twitter.com/themefisher
 github: https://github.com/themefisher/
 pinterest: https://www.pinterest.com/themefisher/
-favicon: /images/favicon.png
-logo_dark: /uploads/megakit-logo-dark.svg
-logo_light: /uploads/megakit-logo.svg
 support:
   phone: "+23-345-67890"
   email: support@gmail.com
