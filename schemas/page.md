@@ -1,6 +1,11 @@
 ---
 title: 
 description:
+SEO_options:
+  description:
+  featured_image: 
+  og_type: 
+  canonical_link:
 hero:
   title: 
   background_image: 
