@@ -53,6 +53,8 @@ _structures:
 
 
 _inputs:
+  favicon:
+    type: image
   logo_dark: 
     type: image
   logo_light:
