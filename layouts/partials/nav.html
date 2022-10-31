@@ -4,13 +4,12 @@
       <div class="col-lg-12">
         <nav class="navbar navbar-expand-lg px-0 py-4">
           <a class="navbar-brand" href="/">
-            {{ if .Site.Data.nav.logo_light }}
-              <img src="{{ .Site.Data.nav.logo_light }}" alt="Company Logo">
+            {{ if .Site.Data.company.logo_light }}
+              <img src="{{ .Site.Data.company.logo_light }}" alt="Company Logo">
             {{ else }}
-              <img src="{{ .Site.Data.nav.logo_dark }}" alt="Company Logo">
+              <img src="{{ .Site.Data.company.logo_dark }}" alt="Company Logo">
             {{ end }}
-            </a>
-    
+          </a>
           <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample09"
             aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
             <span class="fa fa-bars"></span>
@@ -52,8 +51,8 @@
 
     
     <!-- Modal -->
-    <div class="modal modal-lg fade" id="search-modal" tabindex="-1" role="dialog" aria-labelledby="search-modal" aria-hidden="true">
-      <div class="modal-dialog" role="document">
+    <div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-labelledby="search-modal" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="search-modal-label">Search</h5>
