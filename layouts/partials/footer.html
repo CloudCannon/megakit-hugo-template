@@ -37,10 +37,10 @@
 		<div class="col-lg-3 col-sm-6">
 		  <div class="widget">
 			<div class="logo mb-4">
-				{{ if .Site.Data.nav.logo_dark }}
-					<img src="{{ .Site.Data.nav.logo_dark }}" alt="Company Logo">
+				{{ if .Site.Data.company.logo_dark }}
+					<img src="{{ .Site.Data.company.logo_dark }}" alt="Company Logo">
 				{{ else }}
-					<img src="{{ .Site.Data.nav.logo_light }}" alt="Company Logo">
+					<img src="{{ .Site.Data.company.logo_light }}" alt="Company Logo">
 				{{ end }}
 			</div>
 			{{ if .Site.Data.company.support.email }}

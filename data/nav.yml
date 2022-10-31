@@ -1,5 +1,3 @@
-logo_dark: /uploads/megakit-logo-dark.svg
-logo_light: /uploads/megakit-logo.svg
 menu_items:
   - _id: link
     name: Pricing
