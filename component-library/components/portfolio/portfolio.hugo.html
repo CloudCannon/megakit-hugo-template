@@ -16,7 +16,7 @@
 				<div class="col-lg-4 col-md-6">
 					<div class="portflio-item position-relative mb-4">
 						<a href="{{ .image_path }}" class="popup-gallery">
-							<img src="{{ .image_path }}" alt="portfolio" class="img-fluid w-100">
+							<img src="{{ .image_path }}" {{ if .image_alt }} alt="{{ .image_alt }}" {{ else }} alt="portfolio" {{ end }} class="img-fluid w-100">
 
 							<i class="ti-plus overlay-item"></i>
 							<div class="portfolio-item-content">
