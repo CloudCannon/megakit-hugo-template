@@ -4,14 +4,34 @@
 
   <!-- ** Basic Page Needs ** -->
   <meta charset="utf-8">
-  <title>{{ print .Page.Title " | " .Site.Title }}</title>
+  {{ if .Site.Data.company.SEO_options.site_title }}
+    <title>{{ .Page.Title }} | {{ .Site.Data.company.SEO_options.site_title }}</title>
+  {{ else }}
+    <title>{{ print .Page.Title " | " .Site.Title }}</title>
+  {{ end }}
 
   <!-- ** Mobile Specific Metas ** -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-  <meta name="author" content="Themefisher">
+  <meta name="author" content="{{ .Site.Data.company.SEO_options.author }}">
 
+  {{/*  google analytics  */}}
+  {{ if and (hugo.IsProduction) (.Site.Data.company.google_analytics_key) }}
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', '{{ .Site.Data.company.google_analytics_key }}', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+  {{ end }}
+  
+  {{/*  Generate alternate links based on translations if the site has translations  */}}
+  {{ if .IsTranslated }}
+    {{ range .Page.AllTranslations }}
+      <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">
+    {{ end }}
+  {{ end }}
 
   {{/*  Add the description meta tags  */}}
   {{ if eq .RelPermalink "/" }}

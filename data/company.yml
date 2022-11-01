@@ -1,3 +1,11 @@
+SEO_options:
+  site_title: MegaKit
+  description: A template for Hugo, adapted from the MIT-licensed MegaKit Bootstrap template from Theme Fisher.
+  author: ThemeFisher
+  twitter_image: 
+  twitter_site: 
+  image: 
+google_analytics_key: 
 favicon: /images/favicon.png
 logo_dark: /uploads/megakit-logo-dark.svg
 logo_light: /uploads/megakit-logo.svg
