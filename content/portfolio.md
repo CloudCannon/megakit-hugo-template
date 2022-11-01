@@ -1,6 +1,10 @@
 ---
 title: "Latest works"
-description: 
+seo_options:
+  description: Our portfolio of latest works
+  featured_image:
+  og_type: 
+  canonical_link:
 hero:
   title: "Portfolio"
   background_image: "/images/bg/home-2.jpg"

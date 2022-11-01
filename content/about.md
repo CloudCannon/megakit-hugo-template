@@ -1,6 +1,10 @@
 ---
 title: "About"
-description:
+seo_options:
+  description: 
+  featured_image:
+  og_type: 
+  canonical_link:
 hero:
   title: "Our Company"
   background_image: "/images/bg/home-2.jpg"

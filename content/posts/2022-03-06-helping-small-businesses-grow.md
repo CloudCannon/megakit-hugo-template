@@ -6,6 +6,11 @@ categories:
   - Creativity
 image_path: /images/blog/4.jpg
 author: Arther Conal
+seo_options:
+  description: Non illo quas blanditiis repellendus laboriosam minima animi. Consectetur accusantium pariatur repudiandae!
+  featured_image:
+  og_type: article
+  canonical_link:
 ---
 
 Non illo quas blanditiis repellendus laboriosam minima animi. Consectetur accusantium pariatur repudiandae!

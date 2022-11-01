@@ -1,6 +1,10 @@
 ---
 title: "Contact Us"
-description:
+seo_options:
+  description: 
+  featured_image:
+  og_type: 
+  canonical_link:
 hero:
   title: "Get In Touch"
   background_image: "/images/bg/home-2.jpg"

@@ -1,6 +1,10 @@
 ---
 title: "Our Services"
-description:
+seo_options:
+  description: 
+  featured_image:
+  og_type: 
+  canonical_link:
 hero:
   title: "What We do"
   background_image: "/images/bg/home-2.jpg"
