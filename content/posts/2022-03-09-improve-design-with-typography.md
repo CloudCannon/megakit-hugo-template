@@ -6,11 +6,11 @@ categories:
 image_path: /images/blog/1.jpg
 author: Bobby Brown
 seo:
-  page_description: description test
-  canonical_url: testURL
+  page_description:
+  canonical_url:
   featured_image:
-  author_twitter_handle: handlehandle
-  open_graph_type: graphgraph
+  author_twitter_handle:
+  open_graph_type:
   no_index: false
 ---
 Non illo quas blanditiis repellendus laboriosam minima animi. Consectetur accusantium pariatur repudiandae!
