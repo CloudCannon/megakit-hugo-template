@@ -1,0 +1,80 @@
+ <!-- ** Basic Page Needs ** -->
+ <meta charset="utf-8">
+
+ <!-- ** Mobile Specific Metas ** -->
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="description" content="Agency HTML Template">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+ <meta name="author" content="Themefisher">
+ <meta name="generator" content="Themefisher Html5 Agency Template v1.0">
+
+<!-- Page description for SEO -->
+{{ if .Params.seo.page_description }}
+    <meta name="description" content="{{ .Params.seo.page_description }}">
+    <meta property="og:description" content="{{ .Params.seo.page_description }}" />
+{{ else }}
+    <meta name="description" content="{{if .IsHome}}{{ .Site.Data.meta.description }}{{else}}{{ .Description }}{{end}}">  
+    <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Data.meta.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
+{{ end }}
+
+<!-- Canonical URL for SEO -->
+{{ if .Params.seo.canonical_url }}
+    <link rel="canonical" href="{{ .Params.seo.canonical_url }}" />
+{{ else }}
+    <link rel="canonical" href="{{ site.Data.meta.BaseURL }}{{ .RelPermalink}}" />
+{{ end }}
+
+<!-- Featured Image -->
+{{ if .Params.seo.featured_image }}
+<meta name="og:image" content="{{ .Params.seo.featured_image }}" />
+<meta name="twitter:image" content="{{ .Params.seo.featured_image }}" />
+{{ else }}
+
+{{ if .IsHome}}<meta property="og:image" content="{{ .Site.Data.meta.social_media_share_image | absURL }}">{{ else }}<meta property="og:image" content="{{ .Params.Image | absURL }}">{{ end }}
+{{ if .IsHome}}<meta name="twitter:image" content="{{ .Site.Data.meta.social_media_share_image | absURL }}">{{ else }}<meta name="twitter:image" content="{{ .Params.Image | absURL }}">{{ end }}
+{{ end }}
+
+<!-- Twiter Handle -->
+{{ with .Params.seo.author_twitter_handle }}  
+    <meta name="twitter:creator" content="{{ . }}" />
+    {{ else }}
+    <meta name="twitter:creator" content="{{ .Site.Data.meta.twitter_handle }}" />
+    {{ end }}
+
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ .Site.Data.meta.title }}">
+  <meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ if .IsPage }}{{ .Summary }}{{ else }}{{ with .Site.Data.meta.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
+
+  <!-- Facebook OpenGraph -->
+  {{ with .Params.seo.open_graph_type }}
+    <meta property="og:type" content="{{ . }}" />
+    {{ else }}
+    <meta property="og:type" content="website" />
+    {{ end }}
+
+
+  <meta property="og:title" content="{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ .Site.Data.meta.title }}">
+
+ <title>{{ print .Page.Title " | " .Site.Title }}</title>
+
+
+ <!-- bootstrap.min css -->
+ <link rel="stylesheet" href="/plugins/bootstrap/bootstrap.min.css">
+ <!-- Icon Font Css -->
+ <link rel="stylesheet" href="/plugins/themify/css/themify-icons.css">
+ <link rel="stylesheet" href="/plugins/fontawesome/css/all.min.css">
+ <link rel="stylesheet" href="/plugins/magnific-popup/magnific-popup.css">
+ <!-- Owl Carousel CSS -->
+ <link rel="stylesheet" href="/plugins/slick/slick.css">
+ <link rel="stylesheet" href="/plugins/slick/slick-theme.css">
+
+ <!-- Main Stylesheet -->
+ <link rel="stylesheet" href="/css/style.css">
+
+ {{ $style := resources.Get "/scss/style.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
+ <link rel="stylesheet" href="{{ $style.Permalink }}" />
+ 
+ <!--Favicon-->
+ <link rel="icon" href="/images/favicon.png" type="image/x-icon">
