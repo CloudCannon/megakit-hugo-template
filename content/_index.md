@@ -1,11 +1,11 @@
 ---
 title: Home
 seo:
-  page_description: Testing page description
-  canonical_url: test URL
+  page_description:
+  canonical_url:
   featured_image:
-  author_twitter_handle: 'test handle '
-  open_graph_type: test open graph
+  author_twitter_handle:
+  open_graph_type:
   no_index: false
 content_blocks:
   - _bookshop_name: big-hero
