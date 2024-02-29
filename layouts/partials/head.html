@@ -30,8 +30,8 @@
 <meta name="twitter:image" content="{{ .Params.seo.featured_image }}" />
 {{ else }}
 
-{{ if .IsHome}}<meta property="og:image" content="{{ .Site.Data.meta.social_media_share_image | absURL }}">{{ else }}<meta property="og:image" content="{{ .Params.Image | absURL }}">{{ end }}
-{{ if .IsHome}}<meta name="twitter:image" content="{{ .Site.Data.meta.social_media_share_image | absURL }}">{{ else }}<meta name="twitter:image" content="{{ .Params.Image | absURL }}">{{ end }}
+<meta property="og:image" content="{{ .Site.Data.meta.social_media_share_image | absURL }}">
+<meta name="twitter:image" content="{{ .Site.Data.meta.social_media_share_image | absURL }}">
 {{ end }}
 
 <!-- Twiter Handle -->
