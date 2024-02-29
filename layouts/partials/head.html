@@ -13,7 +13,7 @@
     <meta name="description" content="{{ .Params.seo.page_description }}">
     <meta property="og:description" content="{{ .Params.seo.page_description }}" />
 {{ else }}
-    <meta name="description" content="{{if .IsHome}}{{ .Site.Data.meta.description }}{{else}}{{ .Description }}{{end}}">  
+    <meta name="description" content="{{ .Site.Data.meta.description }}">  
     <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Data.meta.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
 {{ end }}
 
