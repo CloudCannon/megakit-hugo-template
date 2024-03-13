@@ -1,6 +1,6 @@
 # Megakit
 
-Business template for Hugo. Browse through a [live demo](https://timely-land.cloudvent.net/). This theme has been adapted from the MIT licensed [Megakit Bootstrap template from Theme Fisher](https://github.com/themefisher/Megakit-Bootstrap-Agency-Template)
+Business template for Hugo. Browse through a [live demo](https://timely-land.cloudvent.net/). This theme has been adapted from the MIT licensed [Megakit Bootstrap template from Theme Fisher](https://github.com/themefisher/Megakit-Bootstrap-Agency-Template).
 
 ![Megakit template screenshot](images/_screenshot.png)
 
@@ -34,7 +34,6 @@ $ hugo server
 ## Editing
 
 Megakit is set up for adding, updating and removing pages, components, posts, company details and footer elements in [CloudCannon](https://app.cloudcannon.com/).
-
 
 ### Company details
 
