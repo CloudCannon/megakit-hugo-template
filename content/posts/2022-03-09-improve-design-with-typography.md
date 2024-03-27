@@ -1,18 +1,19 @@
 ---
-date: 2022-03-09
+date: 2022-03-09T00:00:00Z
 title: Improve design with typography
 description:
 categories:
   - Creativity
 image_path: /images/blog/1.jpg
 author: Bobby Brown
-seo_options:
-  description: Non illo quas blanditiis repellendus laboriosam minima animi. Consectetur accusantium pariatur repudiandae!
+seo:
+  page_description:
+  canonical_url:
   featured_image:
-  og_type: article
-  canonical_link:
+  author_twitter_handle:
+  open_graph_type:
+  no_index: false
 ---
-
 Non illo quas blanditiis repellendus laboriosam minima animi. Consectetur accusantium pariatur repudiandae!
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus natus, consectetur? Illum libero vel nihil nisi quae, voluptatem, sapiente necessitatibus distinctio voluptates, iusto qui. Laboriosam autem, nam voluptate in beatae.

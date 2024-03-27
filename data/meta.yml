@@ -1,0 +1,6 @@
+title: Megakit
+description: Megakit is a versatile business template made with Bootstrap CSS framework for Hugo.
+BaseURL: example.com
+open_graph_type: website
+twitter_handle:
+social_media_share_image: images/siteicon.png
