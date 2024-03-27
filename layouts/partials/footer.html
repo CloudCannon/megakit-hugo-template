@@ -37,7 +37,11 @@
 		<div class="col-lg-3 col-sm-6">
 		  <div class="widget">
 			<div class="logo mb-4">
-			  <h3>{{ .Site.Data.nav.logo.firstpart -}}<span> {{- .Site.Data.nav.logo.lastpart }}</span></h3>
+				{{ if .Site.Data.company.logo_dark }}
+					<img src="{{ .Site.Data.company.logo_dark }}" alt="Company Logo">
+				{{ else }}
+					<img src="{{ .Site.Data.company.logo_light }}" alt="Company Logo">
+				{{ end }}
 			</div>
 			{{ if .Site.Data.company.support.email }}
 				<h6><a href="mailto:{{ .Site.Data.company.support.email }}">{{ .Site.Data.company.support.email }}</a></h6>

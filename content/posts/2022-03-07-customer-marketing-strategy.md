@@ -1,10 +1,16 @@
 ---
 date: 2022-03-07
 title: Customer marketing strategy
+description:
 categories:
   - Marketing
 image_path: /images/blog/3.jpg
 author: Arther Conal
+seo_options:
+  description: Non illo quas blanditiis repellendus laboriosam minima animi. Consectetur accusantium pariatur repudiandae!
+  featured_image:
+  og_type: article
+  canonical_link:
 ---
 
 Non illo quas blanditiis repellendus laboriosam minima animi. Consectetur accusantium pariatur repudiandae!

@@ -1,8 +1,14 @@
 ---
-title: "Page Name"
+title: 
+description:
+SEO_options:
+  description:
+  featured_image: 
+  og_type: 
+  canonical_link:
 hero:
-  title: "Title"
-  background_image: "/images/bg/home-2.jpg"
+  title: 
+  background_image: 
 content_blocks:
   - _bookshop_name: "start"
     preheading: "preheading"

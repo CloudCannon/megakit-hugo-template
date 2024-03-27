@@ -1,10 +1,16 @@
 ---
 date: 2022-03-09
 title: Improve design with typography
+description:
 categories:
   - Creativity
 image_path: /images/blog/1.jpg
 author: Bobby Brown
+seo_options:
+  description: Non illo quas blanditiis repellendus laboriosam minima animi. Consectetur accusantium pariatur repudiandae!
+  featured_image:
+  og_type: article
+  canonical_link:
 ---
 
 Non illo quas blanditiis repellendus laboriosam minima animi. Consectetur accusantium pariatur repudiandae!

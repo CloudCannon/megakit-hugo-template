@@ -4,9 +4,12 @@
       <div class="col-lg-12">
         <nav class="navbar navbar-expand-lg px-0 py-4">
           <a class="navbar-brand" href="/">
-            {{ .Site.Data.nav.logo.firstpart -}}<span> {{- .Site.Data.nav.logo.lastpart }}</span>
+            {{ if .Site.Data.company.logo_light }}
+              <img src="{{ .Site.Data.company.logo_light }}" alt="Company Logo">
+            {{ else }}
+              <img src="{{ .Site.Data.company.logo_dark }}" alt="Company Logo">
+            {{ end }}
           </a>
-    
           <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample09"
             aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
             <span class="fa fa-bars"></span>
@@ -15,15 +18,64 @@
           <div class="collapse navbar-collapse text-center" id="navbarsExample09">
             <ul class="navbar-nav ml-auto">
               {{ $current := . }}
-              {{ range .Site.Data.nav.menu }}
-                <li class="nav-item {{ if eq $current.RelPermalink .url }}active{{ end }}">
-                  <a class="nav-link" href="{{ .url }}" {{ if .open_in_new_tab }}target="_blank"{{ end }}>{{ .name }}</a>
-                </li>
+              {{ $drop_down_menu_count := 0 }}
+              {{ range .Site.Data.nav.menu_items }}
+                {{ if eq ._id "drop_down_menu" }}
+                      {{ $drop_down_menu_count = add $drop_down_menu_count 1 }}
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink-{{ $drop_down_menu_count }}" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ .label }}</a>
+                        <div class="navItemDropdown dropdown-menu" aria-labelledby="navbarDropdownMenuLink-{{ $drop_down_menu_count }}">
+                            {{ range .sub_menu_items }}
+                              {{ if eq ._id "sub_menu_link" }}
+                                  <a class="dropdown-item {{ if eq $current.RelPermalink .url }} active {{ end }}" href="{{ .url }}" {{ if .open_in_new_tab }}target="_blank"{{ end }}>{{ .name }}</a>
+                              {{ else }}
+                                <div class="dropdown-divider"></div>
+                              {{ end }}
+                            {{ end }}
+                        </div>
+                      </li> 
+                {{ else if eq ._id "link"}}
+                  <li class="nav-item">
+                    <a class="nav-link {{ if eq $current.RelPermalink .url }}active{{ end }}" href="{{ .url }}" {{ if .open_in_new_tab }}target="_blank"{{ end }}>{{ .name }}</a>
+                  </li>
+                {{ end }}
               {{ end }}
             </ul>
           </div>
+          <button aria-expanded="false" class="nav-link navbar-search" data-target="#search-modal" data-toggle="modal" role="button">
+            <i class="fas fa-search fa-lg"></i>
+          </button>          
         </nav>
       </div>
     </div>
+
+    
+    <!-- Modal -->
+    <div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-labelledby="search-modal" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="search-modal-label">Search</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <link href="/_pagefind/pagefind-ui.css" rel="stylesheet">
+            <script src="/_pagefind/pagefind-ui.js" type="text/javascript"></script>
+            <div id="search"></div>
+            <script>
+                window.addEventListener('DOMContentLoaded', (event) => {
+                    new PagefindUI({ element: "#search" });
+                });
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
   </div>
 </div>
+

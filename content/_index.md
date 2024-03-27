@@ -1,5 +1,6 @@
 ---
 title: "Home"
+description:
 content_blocks:
   - _bookshop_name: "big-hero"
     preheading: "Prepare for new future"

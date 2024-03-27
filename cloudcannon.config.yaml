@@ -25,8 +25,61 @@ collections_config:
     _enabled_editors:
       - content
       - visual
+    
+    _inputs: 
+      categories: 
+        type: array
+      categories[*]:
+        type: text
+
+_structures: 
+  menu_items:
+    values: 
+      - label: "Link"
+        icon: link
+        value:
+          _id: "link"
+          name:
+          url: 
+          open_in_new_tab: false
+      - label: "Drop down menu"
+        icon: arrow_drop_down
+        value: 
+          _id: "drop_down_menu"
+          label: 
+          sub_menu_items: 
+
+  sub_menu_items: 
+    values:
+      - label: "Link"
+        icon: link
+        value: 
+          _id: "sub_menu_link"
+          name:
+          url: 
+          open_in_new_tab: false
+      - label: "Divider"
+        icon: maximize
+        description: "Straight line divider"
+        value:
+          _id: "sub_menu_divider"
+
 
 _inputs:
+  description:
+    description: Text used for the SEO meta description tag
+  favicon:
+    type: image
+  logo_dark: 
+    type: image
+  logo_light:
+    type: image
+  sub_menu_items: 
+    type: array
+    comment: Sub nav links which will appear in a dropdown menu when hovering over the parent label. If no sub menu items are present there will be no dropdown menu. 
+    options:
+      structures: _structures.sub_menu_items
+
   content:
     type: markdown
   icon:

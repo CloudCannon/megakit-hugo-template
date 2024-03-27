@@ -1,10 +1,16 @@
 ---
 date: 2022-03-08
 title: Connecting to the consumer
+description:
 categories:
   - Sales
 image_path: /images/blog/2.jpg
 author: Bobby Brown
+seo_options:
+  description: Non illo quas blanditiis repellendus laboriosam minima animi. Consectetur accusantium pariatur repudiandae!
+  featured_image:
+  og_type: article
+  canonical_link:
 ---
 
 Non illo quas blanditiis repellendus laboriosam minima animi. Consectetur accusantium pariatur repudiandae!
