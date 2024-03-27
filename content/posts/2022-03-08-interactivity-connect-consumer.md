@@ -1,6 +1,7 @@
 ---
 date: 2022-03-08
 title: Connecting to the consumer
+description:
 categories:
   - Sales
 image_path: /images/blog/2.jpg

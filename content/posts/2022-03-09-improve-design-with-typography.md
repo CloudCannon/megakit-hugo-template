@@ -1,6 +1,7 @@
 ---
 date: 2022-03-09T00:00:00Z
 title: Improve design with typography
+description:
 categories:
   - Creativity
 image_path: /images/blog/1.jpg
